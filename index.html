@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebin fan</title>
+    <link rel="stylesheet" href="./style/index.css" />
+</head>
+<body>
+    <div class="app-grid">
+        <main class="fan-container">
+            <div id="ebin" class="animation-paused">
+                <img id="head" src="./assets/ebin_noseless.svg" />
+                <img id="mustache" class="animation-paused speed-1" src="./assets/mustache.svg" />
+            </div>
+        </main>
+
+        <nav class="control-panel">
+            <ul class="controls-list">
+                <li>
+                    <input type="checkbox" id="power" name="power" />
+                    <label id="powerLabel" class="control-btn" for="power">Off</label>
+                </li>
+                <li>
+                    <input type="radio" id="speed-1" class="speed-control" name="speed" value="1" disabled />
+                    <label for="speed-1" class="control-btn">1</label>
+                </li>
+                <li>
+                    <input type="radio" id="speed-2" class="speed-control" name="speed" value="2" disabled />
+                    <label for="speed-2" class="control-btn">2</label>
+                </li>
+                <li>
+                    <input type="radio" id="speed-3" class="speed-control" name="speed" value="3" disabled />
+                    <label for="speed-3" class="control-btn">3</label>
+                </li>
+                <li>
+                    <input type="radio" id="speed-4" class="speed-control" name="speed" value="4" disabled />
+                    <label for="speed-4" class="control-btn">4</label>
+                </li>
+                <li>
+                    <input type="radio" id="speed-5" class="speed-control" name="speed" value="5" disabled />
+                    <label for="speed-5" class="control-btn">5</label>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="./scripts/navigation.js"></script>
+</body>
+</html>

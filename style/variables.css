@@ -1,0 +1,11 @@
+:root {
+    --color-light: #ccc;
+    --color-dark: #212121;
+    --color-black: #000;
+    --color-off: #777;
+    --color-selected: #ffe69c;
+
+    --shadow-regular: 0 0 5px 5px rgba(0, 0, 0, .2);
+
+    font-size: 14px;
+}

@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-light);
+}
+
+.fan-container {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-panel { grid-area: navbar; }
+
+@media screen and (orientation: portrait) {
+    .app-grid {
+        grid-template-areas: "main" "navbar";
+        grid-template-rows: auto 70px;
+    }
+}
+
+@media all and (orientation: landscape) {
+    .app-grid {
+        grid-template-areas: "navbar main";
+        grid-template-columns: 70px auto;
+    }
+}

@@ -1,0 +1,70 @@
+#ebin {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 574/424;
+    position: relative;
+}
+
+#head, #mustache {
+    position: absolute;
+}
+
+#head {
+    width: 100%;
+}
+
+#mustache {
+    width: 72%;
+    top: 50.5%;
+    left: 27.85%;
+
+    transform-origin: 61%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rotation;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes broken {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(6px, -2px); }
+    50% { transform: translate(-3px, 8px); }
+    75% { transform: translate(8px, 5px); }
+}
+
+.speed-1 {
+    animation-duration: 1s;
+}
+
+.speed-2 {
+    animation-duration: .5s;
+}
+
+.speed-3 {
+    animation-duration: .25s;
+}
+
+.speed-4 {
+    animation-duration: .15s;
+}
+
+.speed-5 {
+    animation-duration: .05s;
+}
+
+.broken {
+    animation: broken .05s infinite linear;
+}
+
+.animation-paused {
+    animation-play-state: paused !important;
+}
+
+.animation-reversed {
+    animation-direction: reverse;
+}
